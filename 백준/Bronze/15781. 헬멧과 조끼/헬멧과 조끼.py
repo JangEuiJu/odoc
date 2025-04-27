@@ -1,0 +1,6 @@
+n, k = map(int, input().split())
+head=list(map(int, input().split()))
+vest=list(map(int, input().split()))
+head.sort()
+vest.sort()
+print(int(head[n-1])+int(vest[k-1]))
