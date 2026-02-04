@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+  ios::sync_with_stdio(false);
+  cin.tie(nullptr);
+
+  map<string, int> m = {
+    {"Poblano", 1500},
+    {"Mirasol", 6000},
+    {"Serrano", 15500},
+    {"Cayenne", 40000},
+    {"Thai", 75000},
+    {"Habanero", 125000}
+  };
+
+  int n; cin >> n;
+
+  int totlaSHU = 0;
+  for (int i = 0; i < n; i++) {
+    string pepper; cin >> pepper;
+    totlaSHU += m[pepper];
+  }
+
+  cout << totlaSHU << "\n";
+
+  return 0;
+}
